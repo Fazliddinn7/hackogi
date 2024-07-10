@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>This is HACKOGI</h1>
+<p>
+<h2>Active Hackathons</h2>
+{% for active_hackathon in active_hackathons %}
+    <h3>{{ active_hackathon.title }}</h3>
+    <p>{{ active_hackathon.overview }}</p>
+{% endfor %}
+
+</p>
+<p>
+<h2>Upcoming Hackathons</h2>
+{% for upcoming_hackathon in upcoming_hackathons %}
+    <h3>{{ upcoming_hackathon.title }}</h3>
+    <p>{{ upcoming_hackathon.overview }}</p>
+{% endfor %}
+
+</p>
+<p>
+<h2>Past Hackathons</h2>
+{% for past_hackathon in past_hackathons %}
+    <h3>{{ past_hackathon.title }}</h3>
+    <p>{{ past_hackathon.overview }}</p>
+{% endfor %}
+
+</p>
+</body>
+</html>
